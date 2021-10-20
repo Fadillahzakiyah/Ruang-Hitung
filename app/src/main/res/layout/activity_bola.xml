@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BolaActivity">
+
+    <TextView
+        android:id="@+id/tvHitungVolumeBola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Volume Bola"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBola"
+        android:layout_width="153dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHitungVolumeBola"
+        app:srcCompat="@drawable/ic_bola" />
+
+    <TextView
+        android:id="@+id/tvJariBola"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/jari_jari"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBola" />
+
+    <EditText
+        android:id="@+id/etJariBola"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rectangle_purpel"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJariBola" />
+
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rectangle_yellow"
+        android:text="@string/hitung"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etJariBola" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hasil"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHitung" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

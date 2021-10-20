@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ruang Hitung</string>
+    <string name="ayo_hitung_volume">Ayo, hitung volume</string>
+    <string name="kerucut">Kerucut</string>
+    <string name="limas">Limas</string>
+    <string name="bola">Bola</string>
+    <string name="volume_kerucut">Volume Kerucut</string>
+    <string name="tinggi">Tinggi (t)</string>
+    <string name="jari_jari">Jari-Jari (r)</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+    <string name="volume_limas">Volume Limas</string>
+    <string name="panjang">Panjang (p)</string>
+    <string name="lebar">lebar (l)</string>
+</resources>

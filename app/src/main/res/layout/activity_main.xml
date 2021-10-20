@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="154dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/text_logo"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/ivCalculate"
+        android:layout_width="153dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_calculate" />
+
+    <TextView
+        android:id="@+id/tvVolumeKerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/ayo_hitung_volume"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCalculate" />
+
+    <Button
+        android:id="@+id/btnKerucut"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rectangle_yellow"
+        android:text="@string/kerucut"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVolumeKerucut" />
+
+    <Button
+        android:id="@+id/btnLimas"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_yellow"
+        android:text="@string/limas"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKerucut" />
+
+    <Button
+        android:id="@+id/btnBola"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_yellow"
+        android:text="@string/bola"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimas" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create by Fadillah Zakiyah"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/pink"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBola"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
